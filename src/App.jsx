@@ -119,7 +119,7 @@ const Home = () => {
 
 const App = () => {
   return (
-    <div className="min-h-screen p-6 bg-[#F5F5F5]">
+    <div className="min-h-screen bg-[#F5F5F5] px-3 py-4 sm:px-4 sm:py-5 md:px-6 md:py-6">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/devfaq" element={<DevFAQ />} />

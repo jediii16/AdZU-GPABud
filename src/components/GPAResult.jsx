@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const GPAResult = () => {
   return (
-    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-
+    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8">
       {/* Current Status */}
-      <div className="p-6 bg-white rounded-xl shadow-sm border border-zinc-100">
-        <h3 className="text-zinc-900 mb-4">
+      <div className="p-4 sm:p-6 bg-white rounded-xl shadow-sm border border-zinc-100">
+        <h3 className="text-zinc-900 mb-4 text-base sm:text-lg">
           Current Status
         </h3>
 
@@ -29,16 +28,19 @@ const GPAResult = () => {
               <span className="text-2xl text-zinc-900">test</span>
             </div>
             <div className="mt-2 text-center">
-              <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-sm">
+              <span className="text-xl sm:text-2xl text-zinc-900">test</span>
+            </div>
+            <div className="mt-2 flex flex-wrap justify-center gap-2">
+              <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-xs sm:text-sm">
                 First Honors
               </span>
-              <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-sm">
+              <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs sm:text-sm">
                 Second Honors
               </span>
-              <span className="inline-block px-3 py-1 bg-zinc-100 text-zinc-700 text-sm">
+              <span className="inline-block px-3 py-1 bg-zinc-100 text-zinc-700 text-xs sm:text-sm">
                 Passed
               </span>
-              <span className="inline-block px-3 py-1 bg-red-100 text-red-700 text-sm">
+              <span className="inline-block px-3 py-1 bg-red-100 text-red-700 text-xs sm:text-sm">
                 Below Passing
               </span>
             </div>
@@ -47,8 +49,8 @@ const GPAResult = () => {
       </div>
 
       {/* Required Grades */}
-      <div className="p-6 bg-white rounded-xl shadow-sm border border-zinc-100">
-        <h3 className="text-zinc-900 mb-4">
+      <div className="p-4 sm:p-6 bg-white rounded-xl shadow-sm border border-zinc-100">
+        <h3 className="text-zinc-900 mb-4 text-base sm:text-lg">
           Grade Needed in Remaining Subjects
         </h3>
 
@@ -56,37 +58,30 @@ const GPAResult = () => {
           <div>
             <div className="flex justify-between items-center mb-1">
               <span className="text-zinc-600">First Honors</span>
-              <span className="text-xl text-emerald-600">test</span>
+              <span className="text-lg sm:text-xl text-emerald-600">test</span>
             </div>
-            <div className="text-xs text-zinc-500">
-              Average of test needed
-            </div>
+            <div className="text-xs text-zinc-500">Average of test needed</div>
           </div>
 
           <div>
             <div className="flex justify-between items-center mb-1">
               <span className="text-zinc-600">Second Honors</span>
-              <span className="text-xl text-blue-600">test</span>
+              <span className="text-lg sm:text-xl text-blue-600">test</span>
             </div>
-            <div className="text-xs text-zinc-500">
-              Average of test needed
-            </div>
+            <div className="text-xs text-zinc-500">Average of test needed</div>
           </div>
 
           <div>
             <div className="flex justify-between items-center mb-1">
               <span className="text-zinc-600">Passing Grade (2.0 GPA)</span>
-              <span className="text-xl text-zinc-600">test</span>
+              <span className="text-lg sm:text-xl text-zinc-600">test</span>
             </div>
-            <div className="text-xs text-zinc-500">
-              Average of test needed
-            </div>
+            <div className="text-xs text-zinc-500">Average of test needed</div>
           </div>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default GPAResult
+export default GPAResult;

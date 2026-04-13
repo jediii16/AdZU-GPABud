@@ -63,10 +63,10 @@ const SubjectsTable = ({
   };
 
   return (
-    <div className="mt-8 p-6 bg-white rounded-xl shadow-sm border border-zinc-100 max-w-7xl mx-auto">
-      <div className="p-6 border-b border-zinc-200">
+    <div className="mt-6 sm:mt-8 p-4 sm:p-5 md:p-6 bg-white rounded-xl shadow-sm border border-zinc-100 max-w-7xl mx-auto">
+      <div className="p-4 sm:p-6 border-b border-zinc-200">
         <h2 className="text-zinc-900 font-heading">Subjects</h2>
-        <p className="text-sm text-zinc-600 mt-1 font-body">
+        <p className="text-xs sm:text-sm text-zinc-600 mt-1 font-body">
           Enter grades (1.0-4.0 scale, 4.0 being highest). Leave blank for
           subjects not yet graded.
         </p>
@@ -74,77 +74,82 @@ const SubjectsTable = ({
 
       <div className="divide-y divide-zinc-200">
         {subjects.map((subject) => (
-          <div className="p-4 flex items-center gap-4" key={subject.id}>
+          <div
+            className="p-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4"
+            key={subject.id}
+          >
             <input
               type="checkbox"
-              className="w-4 h-4"
+              className="w-4 h-4 self-start sm:self-center"
               checked={subject.enabled}
               readOnly
             />
 
             <div className="flex-1">
-              <div className="text-zinc-900 flex items-center gap-2 font-body ">
-                <span className="pr-2 border-r border-zinc-300 font-body text-sm text-zinc-500">
+              <div className="text-zinc-900 flex flex-wrap items-center gap-x-2 gap-y-1 font-body ">
+                <span className="pr-2 border-r border-zinc-300 font-body text-xs sm:text-sm text-zinc-500">
                   {subject.code}
                 </span>
-                <span>{subject.name}</span>
+                <span className="text-sm sm:text-base">{subject.name}</span>
               </div>
-              <div className="text-sm text-zinc-500 font-body">
+              <div className="text-xs sm:text-sm text-zinc-500 font-body">
                 {subject.units} units
               </div>
             </div>
 
-            <input
-              type="number"
-              min="1.0"
-              max="4.0"
-              step="0.5"
-              placeholder="Grade"
-              className="font-body w-24 px-3 py-2 border border-zinc-300 text-zinc-900 disabled:bg-zinc-100 disabled:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+            <div className="flex w-full sm:w-auto items-center gap-3 sm:gap-4">
+              <input
+                type="number"
+                min="1.0"
+                max="4.0"
+                step="0.5"
+                placeholder="Grade"
+                className="font-body w-full sm:w-24 px-3 py-2 border border-zinc-300 text-zinc-900 disabled:bg-zinc-100 disabled:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
 
-            <button
-              onClick={() => onRemoveSubject(subject.id)}
-              className="px-3 py-2 text-white bg-red-600 hover:bg-red-700 cursor-pointer font-body rounded-md transition-colors duration-300"
-            >
-              Remove
-            </button>
+              <button
+                onClick={() => onRemoveSubject(subject.id)}
+                className="w-full sm:w-auto px-3 py-2 text-white bg-red-600 hover:bg-red-700 cursor-pointer font-body rounded-md transition-colors duration-300 text-sm sm:text-base"
+              >
+                Remove
+              </button>
+            </div>
           </div>
         ))}
       </div>
       {/* Add Subject */}
       <div className="p-4 bg-zinc-50 border-t border-zinc-200">
-        <div className="flex gap-3 items-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <div className="flex-1 min-w-0">
             <Select
-  options={subjectOptions}
-  value={selectedSubjectOption}
-  onChange={setSelectedSubjectOption}
-  isSearchable
-  placeholder="Add Subject"
-  unstyled
-  classNames={selectClassNames}
-  formatOptionLabel={(option, { context }) =>
-    context === "menu" ? (
-      <div>
-        <div className="font-body text-inherit">
-          {option.subject.code} - {option.subject.name}
-        </div>
-        <div className="text-sm font-body text-inherit opacity-70">
-          {option.subject.units} units
-        </div>
-      </div>
-    ) : (
-      <div className="text-zinc-900 font-body">
-        {option.subject.code} - {option.subject.name}
-      </div>
-    )
-  }
-/>
+              options={subjectOptions}
+              value={selectedSubjectOption}
+              onChange={setSelectedSubjectOption}
+              isSearchable
+              placeholder="Add Subject"
+              unstyled
+              classNames={selectClassNames}
+              formatOptionLabel={(option, { context }) =>
+                context === "menu" ? (
+                  <div>
+                    <div className="font-body text-inherit">
+                      {option.subject.code} - {option.subject.name}
+                    </div>
+                    <div className="text-sm font-body text-inherit opacity-70">
+                      {option.subject.units} units
+                    </div>
+                  </div>
+                ) : (
+                  <div className="text-zinc-900 font-body">
+                    {option.subject.code} - {option.subject.name}
+                  </div>
+                )
+              }
+            />
           </div>
           <button
             onClick={handleAddSubject}
-            className="shrink-0 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white text-base font-semibold py-2.5 px-4 rounded-md transition-all duration-150 cursor-pointer"
+            className="w-full sm:w-auto shrink-0 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white text-sm sm:text-base font-semibold py-2.5 px-4 rounded-md transition-all duration-150 cursor-pointer"
           >
             Add Subject
           </button>
