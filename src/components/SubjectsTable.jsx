@@ -76,16 +76,9 @@ const SubjectsTable = ({
       <div className="divide-y divide-zinc-200">
         {subjects.map((subject) => (
           <div
-            className="p-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4"
+            className="p-4 sm:px-6 sm:py-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4"
             key={subject.id}
           >
-            <input
-              type="checkbox"
-              className="w-4 h-4 self-start sm:self-center"
-              checked={subject.enabled}
-              readOnly
-            />
-
             <div className="flex-1">
               <div className="text-zinc-900 flex flex-wrap items-center gap-x-2 gap-y-1 font-body ">
                 <span className="pr-2 border-r border-zinc-300 font-body text-xs sm:text-sm text-zinc-500">

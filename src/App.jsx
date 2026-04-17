@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -15,6 +15,7 @@ import {
 
 const Home = () => {
   const [loadedSelection, setLoadedSelection] = useState(null);
+  const subjectsSectionRef = useRef(null);
 
   const availableSubjects = loadedSelection
     ? getAllSubjectsForCourse(
@@ -117,16 +118,21 @@ const Home = () => {
           secondHonors: 3.3,
           passing: 2.0,
         };
+
   const getNeededAverage = (targetGPA) => {
-    if (
-      hasDisqualifyingGradeForHonors &&
-      (targetGPA === honorsThresholds.firstHonors ||
-        targetGPA === honorsThresholds.secondHonors)
-    ) {
+    const isHonorsTarget =
+      targetGPA === honorsThresholds.firstHonors ||
+      targetGPA === honorsThresholds.secondHonors;
+
+    if (hasDisqualifyingGradeForHonors && isHonorsTarget) {
       return "Not eligible";
     }
 
     if (remainingGpaUnits === 0) {
+      if (currentGPA >= targetGPA) {
+        return "—";
+      }
+
       return "❌";
     }
 
@@ -145,7 +151,6 @@ const Home = () => {
 
     return neededAverage.toFixed(2);
   };
-
   const neededForFirstHonors = getNeededAverage(honorsThresholds.firstHonors);
   const neededForSecondHonors = getNeededAverage(honorsThresholds.secondHonors);
   const neededForPassing = getNeededAverage(honorsThresholds.passing);
@@ -195,6 +200,13 @@ const Home = () => {
       courseId,
       honorsSystemId,
     });
+
+    setTimeout(() => {
+      subjectsSectionRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 0);
   };
 
   const navigate = useNavigate();
@@ -206,7 +218,7 @@ const Home = () => {
       <div className="mt-6">
         <SelectionForm onLoadSubjects={handleLoadSubjects} />
         {subjects.length > 0 && (
-          <>
+          <div ref={subjectsSectionRef}>
             <SubjectsTable
               subjects={subjects}
               availableSubjects={availableSubjects}
@@ -226,7 +238,7 @@ const Home = () => {
               neededForPassing={neededForPassing}
             />
             <GradingScale />
-          </>
+          </div>
         )}
         <div className="flex justify-center mt-6">
           <button

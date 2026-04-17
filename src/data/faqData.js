@@ -27,7 +27,7 @@ const faqData = [
     id: 5,
     question: "Who built AdZU GPABud?",
     answer:
-      "AdZU GPABud was developed by Jed Tenorio, with support from Ysabel Atienza for data gathering. Both are Computer Science students at Ateneo de Zamboanga University.",
+      "AdZU GPABud is a student-developed project created by a Computer Science student, with assistance in data gathering and validation.",
   },
   {
     id: 6,
