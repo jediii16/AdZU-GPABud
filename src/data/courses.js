@@ -224,19 +224,19 @@ export const SUBJECTS_BY_COURSE_YEAR_NEW = {
     { code: "PATHFIT1", name: "Movement Enhancement", units: 2 },
     { code: "NCM 100j", name: "Theoretical Foundation of Nursing", units: 3 },
     { code: "NURANP", name: "Anatomy and Physiology", units: 5 },
-    { code: "NURBIO", name: "Biochemistry", units: 5 },
+    { code: "NURCHE", name: "Chemistry (for Non-STEM)", units: 5 },
   ],
   "bsn-nonstem-1-2": [ // 1st Year, 2nd Semester
     { code: "MATMOD", name: "Mathematics in the Modern World", units: 3 },
-    { code: "NURLOCR", name: "Logical and Critical Thinking", units: 3 },
+    { code: "NURLOCR", name: "Logic and Critical Thinking", units: 3 },
     { code: "VOCMIS", name: "Vocation & Mission in the Christian, Ignatian & Islamic Traditions", units: 3 },
     { code: "FFP2", name: "Freshmen Formation Program 2", units: 3, countForGPA: false },
     { code: "NSTP2", name: "National Service Training Program 2", units: 3, countForGPA: false },
-    { code: "PATHFIT2", name: "Fitness Exercise", units: 3 },
+    { code: "PATHFIT2", name: "Fitness Exercise", units: 2 },
     { code: "NCM 101j", name: "Health Assessment", units: 3 },
     { code: "NCM 102j", name: "Health Education", units: 3 },
     { code: "NCM 103j", name: "Fundamentals of Nursing", units: 3 },
-    { code: "NURMIC", name: "Microbiology and Parasitology", units: 3 },
+    { code: "NURMIC", name: "Microbiology and Parasitology", units: 4 },
 ],
 "bsn-nonstem-1-3": [ // 1st Year, Summer
     { code: "NURBIO", name: "Biochemistry", units: 5 },
@@ -245,49 +245,48 @@ export const SUBJECTS_BY_COURSE_YEAR_NEW = {
   "bsn-nonstem-2-1": [ // 2nd Year, 1st Semester
     { code: "NURDR", name: "Drugs and Solutions", units: 3 },
     { code: "PHIHUM", name: "Philosophy of the Human Person, Social & Political Dimensions", units: 3 },
-    { code: "PATHFIT3", name: "Dance/Sports/Rec & Games 1", units: 3 },
+    { code: "PATHFIT3", name: "Dance/Sports/Rec & Games 1", units: 2 },
     { code: "NCM 104j", name: "Community Health Nursing 1- Individual & Family as Clients", units: 3 },
     { code: "NCM 105j", name: "Nutrition and Diet Therapy", units: 3 },
     { code: "NCM 106j", name: "Pharmacology", units: 3 },
-    { code: "NCM 107j", name: "Care of Mother, Child Adolescent- Well Clients", units: 3 },
+    { code: "NCM 107j", name: "Care of Mother, Child Adolescent- Well Clients", units: 6 },
   ],
   "bsn-nonstem-2-2": [ // 2nd Year, 2nd Semester
     { code: "PHIHIS", name: "Readings in Philippine History", units: 3 },
-    { code: "PATHFIT4", name: "Dance/Sports/Rec & Games 2", units: 3 },
+    { code: "PATHFIT4", name: "Dance/Sports/Rec & Games 2", units: 2 },
     { code: "NCM 108j", name: "Health Care Ethics-Bioethics", units: 3 },
-    { code: "NCM 109j", name: "Care of Mother, Child at Risk", units: 3 },
+    { code: "NCM 109j", name: "Care of Mother, Child at Risk", units: 6 },
     { code: "NCM 110j", name: "Nursing Informatics", units: 3 },
     { code: "ETHICS", name: "Ethics", units: 3 },
   ],
   "bsn-nonstem-2-3": [ // 2nd Year, Summer
-    { code: "ARTAPP", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "ARTAPP", name: "Art Appreciation", units: 3 },
+    { code: "ELECT-LM", name: "Philippine Culture and Literature", units: 3 },
   ],
   "bsn-nonstem-3-1": [ // 3rd Year, 1st Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "SCITECS", name: "Science, Technology and Society", units: 3 },
+    { code: "RIZAL", name: "Life and Works of Rizal", units: 3 },
+    { code: "CONWOR", name: "Contemporary World", units: 3 },
+    { code: "NCM 111j", name: "Nursing Research I", units: 3 },
+    { code: "NCM 112j", name: "Care of Clients w/ Probs in Oxygenation, Fluid & Electrolytes, Infections, Inflammatory & Immunologic Response, Cellular Aberrations, Acute & Chronic", units: 9 },
+    { code: "NCM 113j", name: "Community Health Nursing-Population Groups & Community as Clients", units: 3 },
+    { code: "NCM 114j", name: "Care of Older (Group A) The Entrepreneurial Mind ", units: 2 },
   ],
   "bsn-nonstem-3-2": [ // 3rd Year, 2nd Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "ELECT-EM", name: "The Entrepreneurial Mind/Care of Older (Group B)", units: 3 },
+    { code: "NCM 115j", name: "Nursing Research II", units: 2 },
+    { code: "NCM 116j", name: "Care of Clients w/ Problems in & Gastrointestinal Metabolism & Endocrine, Perception and Coordination, Acute & Chronic", units: 9 },
+    { code: "NCM 117j", name: "Care of Clients w/ Maladaptive Patterns of Behavior, Acute & Chronic", units: 4 },
   ],
   "bsn-nonstem-4-1": [ // 4th Year, 1st Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "NCM 118j", name: "Nursing Care of Client w/ Life-Threatening Conditions, Acutely III/ Multi-organ Problems, High Acuity & Emergency Situation, Acute and Chronic ", units: 6 },
+    { code: "NCM 119j", name: "Nursing Leadership and Management", units: 4 },
+    { code: "NCM 120j", name: "Decent Work Employment and Transcultural Nursing", units: 3 },
+    { code: "NURCO 1", name: "Nursing Core Competency 1", units: 3 },
   ],
   "bsn-nonstem-4-2": [ // 4th Year, 2nd Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "NCM 121j", name: "Disaster Nursing", units: 3 },
+    { code: "NURCO 2", name: "Nursing Core Competency 2", units: 3 },
   ],
 
     // ─── BS Nursing-STEM ───────────────────────────────────────────────────────────
@@ -304,66 +303,61 @@ export const SUBJECTS_BY_COURSE_YEAR_NEW = {
   ],
   "bsn-stem-1-2": [ // 1st Year, 2nd Semester
     { code: "MATMOD", name: "Mathematics in the Modern World", units: 3 },
-    { code: "NURLOCR", name: "Logical and Critical Thinking", units: 3 },
+    { code: "NURLOCR", name: "Logic and Critical Thinking", units: 3 },
     { code: "VOCMIS", name: "Vocation & Mission in the Christian, Ignatian & Islamic Traditions", units: 3 },
     { code: "FFP2", name: "Freshmen Formation Program 2", units: 3, countForGPA: false },
     { code: "NSTP2", name: "National Service Training Program 2", units: 3, countForGPA: false },
-    { code: "PATHFIT2", name: "Fitness Exercise", units: 3 },
+    { code: "PATHFIT2", name: "Fitness Exercise", units: 2 },
     { code: "NCM 101j", name: "Health Assessment", units: 3 },
     { code: "NCM 102j", name: "Health Education", units: 3 },
     { code: "NCM 103j", name: "Fundamentals of Nursing", units: 3 },
-    { code: "NURMIC", name: "Microbiology and Parasitology", units: 3 },
-],
-"bsn-stem-1-3": [ // 1st Year, Summer
-    { code: "NURBIO", name: "Biochemistry", units: 5 },
-    { code: "NUR PHY", name: "Physics", units: 3 },
+    { code: "NURMIC", name: "Microbiology and Parasitology", units: 4 },
 ],
   "bsn-stem-2-1": [ // 2nd Year, 1st Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "NURDR", name: "Drugs and Solutions", units: 3 },
+    { code: "PHIHUM", name: "Philosophy of the Human Person, Social & Political Dimensions", units: 3 },
+    { code: "PATHFIT3", name: "Dance/Sports/Rec & Games 1", units: 2 },
+    { code: "NCM 104j", name: "Community Health Nursing 1- Individual & Family as Clients", units: 3 },
+    { code: "NCM 105j", name: "Nutrition and Diet Therapy", units: 3 },
+    { code: "NCM 106j", name: "Pharmacology", units: 3 },
+    { code: "NCM 107j", name: "Care of Mother, Child Adolescent- Well Clients", units: 6 },
   ],
   "bsn-stem-2-2": [ // 2nd Year, 2nd Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "PHIHIS", name: "Readings in Philippine History", units: 3 },
+    { code: "PATHFIT4", name: "Dance/Sports/Rec & Games 2", units: 2 },
+    { code: "NCM 108j", name: "Health Care Ethics-Bioethics", units: 3 },
+    { code: "NCM 109j", name: "Care of Mother, Child at Risk", units: 6 },
+    { code: "NCM 110j", name: "Nursing Informatics", units: 3 },
+    { code: "ETHICS", name: "Ethics", units: 3 },
   ],
   "bsn-stem-2-3": [ // 2nd Year, Summer
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "ARTAPP", name: "Art Appreciation", units: 3 },
+    { code: "ELECT-LM", name: "Philippine Culture and Literature", units: 3 },
   ],
   "bsn-stem-3-1": [ // 3rd Year, 1st Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "SCITECS", name: "Science, Technology and Society", units: 3 },
+    { code: "RIZAL", name: "Life and Works of Rizal", units: 3 },
+    { code: "CONWOR", name: "Contemporary World", units: 3 },
+    { code: "NCM 111j", name: "Nursing Research I", units: 3 },
+    { code: "NCM 112j", name: "Care of Clients w/ Probs in Oxygenation, Fluid & Electrolytes, Infections, Inflammatory & Immunologic Response, Cellular Aberrations, Acute & Chronic", units: 9 },
+    { code: "NCM 113j", name: "Community Health Nursing-Population Groups & Community as Clients", units: 3 },
+    { code: "NCM 114j", name: "Care of Older (Group A) The Entrepreneurial Mind ", units: 2 },
   ],
   "bsn-stem-3-2": [ // 3rd Year, 2nd Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "ELECT-EM", name: "The Entrepreneurial Mind/Care of Older (Group B)", units: 3 },
+    { code: "NCM 115j", name: "Nursing Research II", units: 2 },
+    { code: "NCM 116j", name: "Care of Clients w/ Problems in & Gastrointestinal Metabolism & Endocrine, Perception and Coordination, Acute & Chronic", units: 9 },
+    { code: "NCM 117j", name: "Care of Clients w/ Maladaptive Patterns of Behavior, Acute & Chronic", units: 4 },
   ],
   "bsn-stem-4-1": [ // 4th Year, 1st Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "NCM 118j", name: "Nursing Care of Client w/ Life-Threatening Conditions, Acutely III/ Multi-organ Problems, High Acuity & Emergency Situation, Acute and Chronic ", units: 6 },
+    { code: "NCM 119j", name: "Nursing Leadership and Management", units: 4 },
+    { code: "NCM 120j", name: "Decent Work Employment and Transcultural Nursing", units: 3 },
+    { code: "NURCO 1", name: "Nursing Core Competency 1", units: 3 },
   ],
   "bsn-stem-4-2": [ // 4th Year, 2nd Semester
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
-    { code: "CC 101", name: "Introduction to Computing", units: 3 },
+    { code: "NCM 121j", name: "Disaster Nursing", units: 3 },
+    { code: "NURCO 2", name: "Nursing Core Competency 2", units: 3 },
   ],
 
 // ─── BS Computer Science ──────────────────────────────────────────────────────
@@ -2939,55 +2933,276 @@ export const SUBJECTS_BY_COURSE_YEAR_OLD = {
   'bsn-4-3': [], // 4th Year, Summer
 
   // ─── BS Computer Science ──────────────────────────────────────────────────
-  'bscs-1-1': [], // 1st Year, 1st Semester
-  'bscs-1-2': [], // 1st Year, 2nd Semester
-  'bscs-1-3': [], // 1st Year, Summer
-  'bscs-2-1': [], // 2nd Year, 1st Semester
-  'bscs-2-2': [], // 2nd Year, 2nd Semester
-  'bscs-2-3': [], // 2nd Year, Summer
-  'bscs-3-1': [], // 3rd Year, 1st Semester
-  'bscs-3-2': [], // 3rd Year, 2nd Semester
-  'bscs-3-3': [], // 3rd Year, Summer
-  'bscs-4-1': [], // 4th Year, 1st Semester
-  'bscs-4-2': [], // 4th Year, 2nd Semester
-  'bscs-4-3': [], // 4th Year, Summer
+  'bscs-1-1': [ // 1st Year, 1st Semester
+    { code: 'MATMOD', name: 'Mathematics in the Modern World', units: 3 },
+    { code: 'UNDSELF', name: 'Understanding the Self', units: 3 },
+    { code: 'SPIECO', name: 'Spirituality & Ecology in the Christian, Ignatian & Islamic Traditions', units: 3 },
+    { code: 'PHIHIS', name: 'Readings in Philippine History', units: 3 },
+    { code: "FFP1", name: "Freshmen Formation Program 1", units: 1.5, countForGPA: false },
+    { code: "NSTP1", name: "National Service Training Program 1", units: 3, countForGPA: false },
+    { code: 'PATHFIT1', name: 'Movement Enhancement', units: 2 },
+    { code: 'CIT.001', name: 'Problem Solving Fundamentals', units: 3 },
+  ], 
+  'bscs-1-2': [ // 1st Year, 2nd Semester
+    { code: 'PURCOM', name: 'Purposive Communication', units: 3 },
+    { code: 'RIZAL', name: 'Life and Works of Rizal', units: 3 },
+    { code: "FFP2", name: "Freshmen Formation Program 2", units: 1.5, countForGPA: false },
+    { code: "NSTP2", name: "National Service Training Program 2", units: 3, countForGPA: false },
+    { code: 'PATHFIT2', name: 'Fitness Exercise', units: 2 },
+    { code: 'VOCMIS', name: 'Vocation & Mission in the Christian, Ignatian & Islamic Traditions', units: 3 },
+    { code: 'PHIHUM', name: 'Philosophy of the Human Person: Social & Political Dimensions', units: 3 },
+    { code: 'CIT.002', name: 'Computer Programming 1', units: 4 },
+  ],
+  'bscs-2-1': [ // 2nd Year, 1st Semester
+    { code: 'SCITECS', name: 'Science, Technology & Society', units: 3 },
+    { code: 'PATHFIT3', name: 'Dance/Sports/Rec & Games I', units: 2 },
+    { code: 'CONWOR', name: 'Contemporary World', units: 3 },
+    { code: 'CITM.001', name: 'Discrete Mathematics', units: 3 },
+    { code: 'CS.211', name: 'Logic Theory', units: 3 },
+    { code: 'CIT.004', name: 'Computer Programming II', units: 4 },
+    { code: 'CIT.003', name: 'Web Programming', units: 3 },
+  ],
+  'bscs-2-2': [ // 2nd Year, 2nd Semester
+    { code: 'ARTAPP', name: 'Art Appreciation', units: 3 },
+    { code: 'PATHFIT4', name: 'Dance/Sports/Rec & Games II', units: 2 },
+    { code: 'ETHICS', name: 'Ethics', units: 3 },
+    { code: 'CIT.005', name: 'Object-Oriented Programming', units: 3 },
+    { code: 'CIT.006', name: 'Data Structure', units: 4 },
+    { code: 'CIT.007', name: 'Server-Side Scripting', units: 3 },
+    { code: 'CIT.008', name: 'Systems Analysis & Design', units: 3 },
+  ],
+  'bscs-2-3': [ // 2nd Year, Summer
+    { code: 'GE ELECT-DA', name: 'Data Analytics', units: 3 },
+    { code: 'GE ELECT-LM', name: 'Literatures of Mindanao', units: 3 },
+  ],
+  'bscs-3-1': [ // 3rd Year, 1st Semester
+    { code: 'CIT.009', name: 'Database Management System', units: 3 },
+    { code: 'CIT.010', name: 'Web Systems & Technologies', units: 3 },
+    { code: 'CS.311', name: 'Automata Theory', units: 3 },
+    { code: 'CS.312', name: 'Programming Languages', units: 3 },
+    { code: 'CS.313', name: 'Algorithm Analysis', units: 3 },
+    { code: 'CS.314', name: 'Computer Architecture', units: 3 },
+    { code: 'CIT.011', name: 'Human-Computer Interaction', units: 3 },
+    { code: 'COGNATE1', name: 'Cognate Course 1', units: 3 },
+  ],
+  'bscs-3-2': [ // 3rd Year, 2nd Semester
+    { code: 'CIT.012', name: 'Research', units: 3 },
+    { code: 'CITM.002', name: 'Statistics', units: 3 },
+    { code: 'CS.321', name: 'Artificial Intelligence', units: 3 },
+    { code: 'CS.322', name: 'Software Engineering I', units: 3 },
+    { code: 'CIT.013', name: 'System Testing and Evaluation', units: 3 },
+    { code: 'CIT.014', name: 'Technopreneurship', units: 3 },
+    { code: 'COGNATE2', name: 'Cognate Course 2', units: 3 },
+  ], 
+  'bscs-4-1': [ // 4th Year, 1st Semester
+    { code: 'CS.411', name: 'Thesis I', units: 3 },
+    { code: 'CIT.015', name: 'Operating System', units: 3 },
+    { code: 'CS.412', name: 'Data Mining', units: 3 },
+    { code: 'CIT.016', name: 'Data Communications', units: 3 },
+    { code: 'CS.413', name: 'Software Engineering II', units: 3 },
+    { code: 'CIT.017', name: 'Information Assurance & Security', units: 3 },
+    { code: 'COGNATE3', name: 'Cognate Course 3', units: 3 },
+  ],
+  'bscs-4-2': [ // 4th Year, 2nd Semester
+    { code: 'CS.421', name: 'Thesis II', units: 3 },
+    { code: 'CIT.018', name: 'Social & Professional Issues', units: 3 },
+    { code: 'COGNATE4', name: 'Cognate Course 4', units: 3 },
+  ],
 
   // ─── BS Information Technology ────────────────────────────────────────────
-  'bsit-1-1': [], // 1st Year, 1st Semester
-  'bsit-1-2': [], // 1st Year, 2nd Semester
-  'bsit-1-3': [], // 1st Year, Summer
-  'bsit-2-1': [], // 2nd Year, 1st Semester
-  'bsit-2-2': [], // 2nd Year, 2nd Semester
-  'bsit-2-3': [], // 2nd Year, Summer
-  'bsit-3-1': [], // 3rd Year, 1st Semester
-  'bsit-3-2': [], // 3rd Year, 2nd Semester
-  'bsit-3-3': [], // 3rd Year, Summer
-  'bsit-4-1': [], // 4th Year, 1st Semester
-  'bsit-4-2': [], // 4th Year, 2nd Semester
-  'bsit-4-3': [], // 4th Year, Summer
+  'bsit-1-1': [ // 1st Year, 1st Semester
+    { code: 'MATMOD', name: 'Mathematics in the Modern World', units: 3 },
+    { code: 'UNDSELF', name: 'Understanding the Self', units: 3 },
+    { code: 'SPIECO', name: 'Spirituality & Ecology in the Christian, Ignatian & Islamic Traditions', units: 3 },
+    { code: 'PHIHIS', name: 'Readings in Philippine History', units: 3 },
+    { code: "FFP1", name: "Freshmen Formation Program 1", units: 1.5, countForGPA: false },
+    { code: "NSTP1", name: "National Service Training Program 1", units: 3, countForGPA: false },
+    { code: 'PATHFIT1', name: 'Movement Enhancement', units: 2 },
+    { code: 'CIT.001', name: 'Problem Solving Fundamentals', units: 3 },
+    { code: 'IT.111', name: 'Digital Multimedia', units: 3 },
+  ],
+  'bsit-1-2': [ // 1st Year, 2nd Semester
+    { code: 'PURCOM', name: 'Purposive Communication', units: 3 },
+    { code: 'PHIHUM', name: 'Philosophy of the Human Person: Social & Political Dimensions', units: 3 },
+    { code: 'VOCMIS', name: 'Vocation & Mission in the Christian, Ignatian & Islamic Traditions', units: 3 },
+    { code: 'RIZAL', name: 'Life and Works of Rizal', units: 3 },
+    { code: "FFP2", name: "Freshmen Formation Program 2", units: 1.5, countForGPA: false },
+    { code: "NSTP2", name: "National Service Training Program 2", units: 3, countForGPA: false },
+    { code: 'PATHFIT2', name: 'Fitness Exercise', units: 2 },
+    { code: 'CIT.002', name: 'Computer Programming I', units: 4 },
+  ],
+  'bsit-2-1': [ // 2nd Year, 1st Semester
+    { code: 'SCITECS', name: 'Science, Technology & Society', units: 3 },
+    { code: 'CONWOR', name: 'Contemporary World', units: 3 },
+    { code: 'PATHFIT3', name: 'Dance/Sports/Rec&Games I', units: 2 },
+    { code: 'CITM.001', name: 'Discrete Mathematics', units: 3 },
+    { code: 'CIT.004', name: 'Computer Programming II', units: 4 },
+    { code: 'CIT.003', name: 'Web Programming', units: 3 },
+  ],
+  'bsit-2-2': [ // 2nd Year, 2nd Semester
+    { code: 'ARTAPP', name: 'Art Appreciation', units: 3 },
+    { code: 'PATHFIT4', name: 'Dance/Sports/Rec & Games II', units: 2 },
+    { code: 'ETHICS', name: 'Ethics', units: 3 },
+    { code: 'CIT.007', name: 'Server-Side Scripting', units: 3 },
+    { code: 'CIT.006', name: 'Data Structure & Algorithm', units: 4 },
+    { code: 'CIT.005', name: 'Object-Oriented Programming', units: 3 },
+    { code: 'CIT.008', name: 'Systems Analysis & Design', units: 3 },
+  ],
+  'bsit-2-3': [ // 2nd Year, Summer
+    { code: 'GE ELECT-DA', name: 'Data Analytics', units: 3 },
+    { code: 'GE ELECT-LM', name: 'Literatures of Mindanao', units: 3 },
+  ],
+  'bsit-3-1': [ // 3rd Year, 1st Semester
+    { code: 'CIT.009', name: 'Database Management System', units: 3 },
+    { code: 'CIT.010', name: 'Web Systems & Technologies', units: 3 },
+    { code: 'CIT.011', name: 'Human-Computer Interaction', units: 3 },
+    { code: 'CITM.003', name: 'Quantitative Methods', units: 3 },
+    { code: 'CIT.015', name: 'Operating Systems', units: 3 },
+    { code: 'IT.311', name: 'Integrative Programming and Technologies', units: 3 },
+    { code: 'COGNATE1', name: 'Cognate Course 01', units: 3 },
+  ],
+  'bsit-3-2': [ // 3rd Year, 2nd Semester
+    { code: 'CIT.012', name: 'Research', units: 3 },
+    { code: 'IT.321', name: 'Software Engineering', units: 3 },
+    { code: 'CIT.013', name: 'System Testing & Evaluation', units: 3 },
+    { code: 'IT.322', name: 'Web Server Administration', units: 3 },
+    { code: 'CIT.014', name: 'Technopreneurship', units: 3 },
+    { code: 'COGNATE2', name: 'Cognate Course 02', units: 3 },
+    { code: 'COGNATE3', name: 'Cognate Course 03', units: 3 },
+  ],
+  'bsit-4-1': [ // 4th Year, 1st Semester
+    { code: 'IT.411', name: 'Capstone I', units: 3 },
+    { code: 'IT.412', name: 'Information Management', units: 3 },
+    { code: 'CIT.017', name: 'Information Assurance & Security', units: 3 },
+    { code: 'CIT.016', name: 'Data Communication', units: 3 },
+    { code: 'IT.413', name: 'Systems Integration', units: 3 },
+    { code: 'COGNATE4', name: 'Cognate Course 04', units: 3 },
+  ],
+  'bsit-4-2': [ // 4th Year, 2nd Semester
+    { code: 'IT.421', name: 'Capstone II', units: 3 },
+    { code: 'CIT.018', name: 'Social & Professional Issues', units: 3 },
+    { code: 'IT.422', name: 'Information Security Audit', units: 3 },
+    { code: 'IT.423', name: 'E-Commerce', units: 3 },
+    { code: 'IT.424', name: 'Wired and Wireless Networks', units: 3 },
+  ],
 
   // ─── BS New Media and Computer Animation ──────────────────────────────────
-  'bsnmca-1-1': [], // 1st Year, 1st Semester
-  'bsnmca-1-2': [], // 1st Year, 2nd Semester
-  'bsnmca-1-3': [], // 1st Year, Summer
-  'bsnmca-2-1': [], // 2nd Year, 1st Semester
-  'bsnmca-2-2': [], // 2nd Year, 2nd Semester
-  'bsnmca-2-3': [], // 2nd Year, Summer
-  'bsnmca-3-1': [], // 3rd Year, 1st Semester
-  'bsnmca-3-2': [], // 3rd Year, 2nd Semester
-  'bsnmca-3-3': [], // 3rd Year, Summer
-  'bsnmca-4-1': [], // 4th Year, 1st Semester
-  'bsnmca-4-2': [], // 4th Year, 2nd Semester
-  'bsnmca-4-3': [], // 4th Year, Summer
+  'bsnmca-1-1': [ // 1st Year, 1st Semester
+    { code: 'MATMOD', name: 'Mathematics in the Modern World', units: 3 },
+    { code: 'UNDSELF', name: 'Understanding the Self', units: 3 },
+    { code: 'SPIECO', name: 'Spirituality & Ecology in the Christian, Ignatian & Islamic Traditions', units: 3 },
+    { code: 'PHIHIS', name: 'Readings in Philippine History', units: 3 },
+    { code: 'FFP-NSTP1', name: 'Freshmen Formation Program/NSTP1', units: 4.5, countForGPA: false },
+    { code: 'PATHFIT1', name: 'Movement Enhancement', units: 2 },
+    { code: 'NMCA.111', name: 'Photography', units: 3 },
+    { code: 'NMCA.112', name: 'Film Appreciation', units: 3 },
+  ],
+  'bsnmca-1-2': [ // 1st Year, 2nd Semester
+    { code: 'PURCOM', name: 'Purposive Communication', units: 3 },
+    { code: 'PHIHUM', name: 'Philosophy of the Human Person: Social & Political Dimensions', units: 3 },
+    { code: 'VOCMIS', name: 'Vocation & Mission in the Christian, Ignatian & Islamic Traditions', units: 3 },
+    { code: 'FFP-NSTP2', name: 'Freshmen Formation Program/NSTP2', units: 4.5, countForGPA: false },
+    { code: 'PATHFIT2', name: 'Fitness Exercise', units: 2 },
+    { code: 'NMCA.121', name: 'Screenplay I', units: 3 },
+    { code: 'NMCA.122', name: 'Visual Conceptualization', units: 3 },
+    { code: 'NMCA.123', name: 'Sound Design & Voice Acting', units: 3 },
+  ],
+  'bsnmca-2-1': [ // 2nd Year, 1st Semester
+    { code: 'RIZAL', name: 'Life and Works of Rizal', units: 3 },
+    { code: 'ETHICS', name: 'Ethics', units: 3 },
+    { code: 'PATHFIT3', name: 'Dance/Sports/Rec & Games I', units: 2 },
+    { code: 'NMCA.211', name: 'Motion Graphics & Visual Effects', units: 5 },
+    { code: 'NMCA.212', name: 'Screen Acting', units: 3 },
+    { code: 'NMCA.213', name: 'Principles of Animation', units: 3 },
+    { code: 'NMCA.214', name: 'Screenplay II', units: 3 },
+  ],
+  'bsnmca-2-2': [ // 2nd Year, 2nd Semester
+    { code: 'ARTAPP', name: 'Art Appreciation', units: 3 },
+    { code: 'PATHFIT4', name: 'Dance/Sports/Rec & Games II', units: 2 },
+    { code: 'CONWOR', name: 'Contemporary World', units: 3 },
+    { code: 'SCITECS', name: 'Science, Technology & Society', units: 3 },
+    { code: 'NMCA.221', name: 'Film Production and Industry', units: 3 },
+    { code: 'NMCA.222', name: '3D Modelling', units: 5 },
+    { code: 'COGNATE1', name: 'Cognate Course 01', units: 3 },
+  ],
+  'bsnmca-2-3': [ // 2nd Year, Summer
+    { code: 'GE ELECT-DA', name: 'Data Analytics', units: 3 },
+    { code: 'GE ELECT-LM', name: 'Literatures of Mindanao', units: 3 },
+  ],
+  'bsnmca-3-1': [ // 3rd Year, 1st Semester
+    { code: 'NMCA.311', name: 'Texturing and Rendering', units: 5 },
+    { code: 'NMCA.312', name: '3D Animation', units: 5 },
+    { code: 'NMCA.313', name: '3D Rigging', units: 5 },
+    { code: 'NMCA.314', name: 'IT with Word, Spreadsheet, & others', units: 3 },
+    { code: 'COGNATE2', name: 'Cognate Course 02', units: 3 },
+  ],
+  'bsnmca-3-2': [ // 3rd Year, 2nd Semester
+    { code: 'LITMOD', name: 'Literature of the Modern World', units: 3 },
+    { code: 'CIT.014', name: 'Technopreneurship', units: 3 },
+    { code: 'NMCA.321', name: '3D Dynamics', units: 5 },
+    { code: 'NMCA.322', name: 'IT Ethics', units: 3 },
+    { code: 'COGNATE3', name: 'Cognate Course 03', units: 3 },
+  ],
+  'bsnmca-4-1': [ // 4th Year, 1st Semester
+    { code: 'NMCA.411', name: 'Senior Animation Film Production I', units: 3 },
+    { code: 'NMCA.412', name: 'Portfolio Development', units: 3 },
+    { code: 'NMCA.413', name: 'Digital Marketing', units: 3 },
+    { code: 'COGNATE4', name: 'Cognate Course 04', units: 3 },
+  ],
+  'bsnmca-4-2': [ // 4th Year, 2nd Semester
+    { code: 'NMCA.421', name: 'Senior Animation Film Production II', units: 3 },
+    { code: 'NMCA.422', name: 'Animation Seminars', units: 3 },
+    { code: 'NMCA.423', name: 'Portfolio Development II', units: 3 },
+  ],
 
   // ─── Associate in Electronics Engineering Technology ──────────────────────
   // Note: 2-year program, only years 1–2
-  'aeet-1-1': [], // 1st Year, 1st Semester
-  'aeet-1-2': [], // 1st Year, 2nd Semester
-  'aeet-1-3': [], // 1st Year, Summer
-  'aeet-2-1': [], // 2nd Year, 1st Semester
-  'aeet-2-2': [], // 2nd Year, 2nd Semester
-  'aeet-2-3': [], // 2nd Year, Summer
+  'aeet-1-1': [ // 1st Year, 1st Semester
+    { code: 'EET 111', name: 'Computer Hardware Fund: Troubleshooting & Maintenance', units: 3 },
+    { code: 'EET 112', name: 'Office Productivity Tools and Applications', units: 3 },
+    { code: 'MATMOD', name: 'Mathematics in the Modern World', units: 3 },
+    { code: 'UNDSELF', name: 'Understanding the Self', units: 3 },
+    { code: 'SPIECO', name: 'Spirituality & Ecology in the Christian Ignatian & Islamic Traditions', units: 3 },
+    { code: 'PHIHIS', name: 'Readings in Philippine History', units: 3 },
+    { code: 'PATHFIT1', name: 'Movement Enhancement', units: 2 },
+    { code: "FFP1", name: "Freshmen Formation Program 1", units: 1.5, countForGPA: false },
+    { code: "NSTP1", name: "National Service Training Program 1", units: 3, countForGPA: false },
+    
+  ],
+  'aeet-1-2': [ // 1st Year, 2nd Semester
+    { code: 'EET 121', name: 'Software Tools, Troubleshooting and Maintenance', units: 3 },
+    { code: 'EET 122', name: 'Internet Technologies: Tools and Applications', units: 3 },
+    { code: 'PURCOM', name: 'Purposive Communication', units: 3 },
+    { code: 'ARTAPP', name: 'Art Appreciation', units: 3 },
+    { code: 'PHIHUM', name: 'Philosophy of the Human Person: Social & Political Dimensions', units: 3 },
+    { code: 'VOCMIS', name: 'Vocation & Mission in the Christian, Ignatian & Islamic Traditions', units: 3 },
+    { code: 'PATHFIT2', name: 'Fitness Exercise', units: 2 },
+    { code: "FFP2", name: "Freshmen Formation Program 2", units: 1.5, countForGPA: false },
+    { code: "NSTP2", name: "National Service Training Program 2", units: 3, countForGPA: false },
+  ],
+  'aeet-1-3': [ // 1st Year, Summer
+    { code: 'ENG.131', name: 'Computer-Aided Drafting', units: 2 },
+    { code: 'EET 131', name: 'Network Fund.: Wired & Wireless Networks', units: 3 },
+    { code: 'EET 132', name: 'Logic Tools in Problem Solving', units: 3 },
+  ],
+  'aeet-2-1': [ // 2nd Year, 1st Semester
+    { code: 'EET 211', name: 'Intro. to Computer Programming', units: 4 },
+    { code: 'EET 212', name: 'Fundamentals of AC & DC Circuits', units: 4 },
+    { code: 'CONWOR', name: 'Contemporary World', units: 3 },
+    { code: 'ETHICS', name: 'Ethics', units: 3 },
+    { code: 'GE ELECT-LM', name: 'Mindanao Literatures', units: 3 },
+    { code: 'COGNATE1', name: 'Cognate Course 1', units: 3 },
+    { code: 'PATHFIT 3', name: 'Dance/Sports/Rec & Games I', units: 2 },
+  ],
+  'aeet-2-2': [ // 2nd Year, 2nd Semester
+    { code: 'EET 221', name: 'Practicum', units: 6 },
+    { code: 'COGNATE2', name: 'Cognate Course 2', units: 3 },
+    { code: 'RIZAL', name: 'Life and Works of Rizal', units: 3 },
+    { code: 'GE ELECT-DA', name: 'Data Analytics', units: 3 },
+    { code: 'SCITECS', name: 'Science, Technology & Society', units: 3 },
+    { code: 'PATHFIT4', name: 'Dance/Sports/Rec & Games II', units: 2 },
+    { code: 'FILDIS', name: 'Filipino sa Iba\'t Ibang Disiplina', units: 3 },
+  ],
 
   // ─── BS Biology - Medical Biology ─────────────────────────────────────────
   'bsbiomed-1-1': [], // 1st Year, 1st Semester
@@ -3031,19 +3246,275 @@ export const SUBJECTS_BY_COURSE_YEAR_OLD = {
   'bsece-4-2': [], // 4th Year, 2nd Semester
   'bsece-4-3': [], // 4th Year, Summer
 
-  // ─── BS Civil Engineering ─────────────────────────────────────────────────
-  'bsce-1-1': [], // 1st Year, 1st Semester
-  'bsce-1-2': [], // 1st Year, 2nd Semester
-  'bsce-1-3': [], // 1st Year, Summer
-  'bsce-2-1': [], // 2nd Year, 1st Semester
-  'bsce-2-2': [], // 2nd Year, 2nd Semester
-  'bsce-2-3': [], // 2nd Year, Summer
-  'bsce-3-1': [], // 3rd Year, 1st Semester
-  'bsce-3-2': [], // 3rd Year, 2nd Semester
-  'bsce-3-3': [], // 3rd Year, Summer
-  'bsce-4-1': [], // 4th Year, 1st Semester
-  'bsce-4-2': [], // 4th Year, 2nd Semester
-  'bsce-4-3': [], // 4th Year, Summer
+// ─── BS Civil Engineering (Construction Management) ───────────────────────────
+'bsce-cm-1-1': [
+  { code: 'ENM.101', name: 'Calculus 1: Differential Calculus', units: 3 },
+  { code: 'ENS.103', name: 'Chemistry for Engineers', units: 4 },
+  { code: 'UNDSELF', name: 'Understanding the Self', units: 3 },
+  { code: 'MATMOD', name: 'Mathematics in the Modern World', units: 3 },
+  { code: 'SPIECO', name: 'Spirituality & Ecology in the Christian, Ignatian & Islamic Trad', units: 3 },
+  { code: 'CE.101', name: 'Civil Engineering Orientation', units: 2 },
+  { code: 'PATHFIT1', name: 'Movement Enhancement', units: 2 },
+  { code: 'FFP 1', name: 'Freshmen Formation Program 1', units: 1.5, countForGPA: false },
+  { code: 'NSTP1', name: 'National Service Training Program 1', units: 3, countForGPA: false },
+],
+'bsce-cm-1-2': [
+  { code: 'ENM.102', name: 'Calculus 2: Integral Calculus', units: 3 },
+  { code: 'ENS.101', name: 'Physics 1: Physics for Engineers', units: 4 },
+  { code: 'CE.121', name: 'Engineering Drawing and Plans', units: 1 },
+  { code: 'CE.102', name: 'Computer Fundamentals and Programming', units: 2 },
+  { code: 'PHIHUM', name: 'Philosophy of the Human Person: Social & Political Dimensions', units: 3 },
+  { code: 'VOCMIS', name: 'Vocation & Mission in the Christian, Ignatian & Islamic Trad', units: 3 },
+  { code: 'PATHFIT2', name: 'Fitness Exercise', units: 2 },
+  { code: 'FFP 2', name: 'Freshmen Formation Program 2', units: 1.5, countForGPA: false },
+  { code: 'NSTP2', name: 'National Service Training Program 2', units: 3, countForGPA: false },
+],
+'bsce-cm-1-3': [
+  { code: 'CE.103', name: 'Computer-Aided Design for CE', units: 1 },
+  { code: 'ENG.205', name: 'Engineering Economics', units: 3 },
+  { code: 'ENM.104', name: 'Engineering Data Analysis', units: 3 },
+],
+'bsce-cm-2-1': [
+  { code: 'CE.104', name: 'Statics of Rigid Bodies', units: 3 },
+  { code: 'LITMIN', name: 'Literatures of Mindanao', units: 3 },
+  { code: 'ARTAPP', name: 'Art Appreciation', units: 3 },
+  { code: 'CE.105', name: 'Fundamentals of Surveying', units: 4 },
+  { code: 'ENM.103', name: 'Differential Equations', units: 3 },
+  { code: 'ETHICS', name: 'Ethics', units: 3 },
+  { code: 'CONWOR', name: 'Contemporary World', units: 3 },
+  { code: 'PATHFIT3', name: 'Dance/Sports/Rec & Games I', units: 2 },
+],
+'bsce-cm-2-2': [
+  { code: 'CE.106', name: 'Dynamics of Rigid Bodies', units: 2 },
+  { code: 'CE.107', name: 'Geology for Civil Engineers', units: 2 },
+  { code: 'PHIHIS', name: 'Readings in Philippine History', units: 3 },
+  { code: 'CE.108', name: 'Mechanics of Deformable Bodies', units: 4 },
+  { code: 'GE-Elect DA', name: 'Data Analytics', units: 3 },
+  { code: 'CE.109', name: 'Construction Materials and Testing', units: 3 },
+  { code: 'SCIETECS', name: 'Science, Technology & Society', units: 3 },
+  { code: 'PURCOM', name: 'Purposive Communication', units: 3 },
+  { code: 'PATHFIT4', name: 'Dance/Sports/Rec & Games II', units: 2 },
+],
+'bsce-cm-2-3': [
+  { code: 'CE.110', name: 'Engineering Management for CE', units: 2 },
+  { code: 'CE.111', name: 'Numerical Solutions to CE Problems', units: 3 },
+  { code: 'CE.112', name: 'Engineering Utilities 1', units: 3 },
+],
+'bsce-cm-3-1': [
+  { code: 'CE.113', name: 'Structural Theory', units: 4 },
+  { code: 'CE.114', name: 'Highway and Railroad Engineering', units: 3 },
+  { code: 'CE.115', name: 'Hydrology', units: 2 },
+  { code: 'CE.116', name: 'Engineering Utilities 2', units: 3 },
+  { code: 'RIZAL', name: 'Life and Works of Rizal', units: 3 },
+  { code: 'ENG.201', name: 'Technopreneurship', units: 3 },
+  { code: 'CE.117', name: 'Principles of Transportation Engineering', units: 3 },
+],
+'bsce-cm-3-2': [
+  { code: 'CE.118', name: 'Building System Design', units: 3 },
+  { code: 'CE.119', name: 'Principles of Steel Design', units: 3 },
+  { code: 'CE.120', name: 'Principles of Reinforced/Pre-Stressed Concrete', units: 4 },
+  { code: 'CE.121', name: 'Hydraulics', units: 5 },
+  { code: 'CE.122', name: 'CE Law, Contracts and Ethics', units: 2 },
+],
+'bsce-cm-3-3': [
+  { code: 'CE.141C', name: 'Construction Cost Engineering', units: 3 },
+  { code: 'CE.142C', name: 'Project Construction and Management', units: 3 },
+  { code: 'CE.123', name: 'Construction Methods and Project Management', units: 3 },
+],
+'bsce-cm-4-1': [
+  { code: 'CE.131', name: 'CE Project 1', units: 2 },
+  { code: 'CE.124', name: 'Geotechnical Engineering (Soil Mechanics)', units: 4 },
+  { code: 'CE.143C', name: 'Advanced Construction Methods and Equipment', units: 3 },
+  { code: 'CE.125', name: 'Quantity Surveying', units: 2 },
+  { code: 'CE.144C', name: 'Construction Occupational Safety and Health', units: 3 },
+  { code: 'CE.146C', name: 'Database Management in Construction', units: 3 },
+  { code: 'CE.133', name: 'CE Integration Course 1', units: 3 },
+],
+'bsce-cm-4-2': [
+  { code: 'CE.132', name: 'CE Project 2', units: 2 },
+  { code: 'CE.126', name: 'CE on the Job Training (240 hrs. Minimum)', units: 3 },
+  { code: 'CE.134', name: 'CE Integration Course 2', units: 3 },
+],
+
+// ─── BS Civil Engineering (Structural) ────────────────────────────────────────
+'bsce-st-1-1': [
+  { code: 'ENM.101', name: 'Calculus 1: Differential Calculus', units: 3 },
+  { code: 'ENS.103', name: 'Chemistry for Engineers', units: 4 },
+  { code: 'UNDSELF', name: 'Understanding the Self', units: 3 },
+  { code: 'MATMOD', name: 'Mathematics in the Modern World', units: 3 },
+  { code: 'SPIECO', name: 'Spirituality & Ecology in the Christian, Ignatian & Islamic Trad', units: 3 },
+  { code: 'CE.101', name: 'Civil Engineering Orientation', units: 2 },
+  { code: 'PATHFIT1', name: 'Movement Enhancement', units: 2 },
+  { code: 'FFP 1', name: 'Freshmen Formation Program 1', units: 1.5, countForGPA: false },
+  { code: 'NSTP1', name: 'National Service Training Program 1', units: 3, countForGPA: false },
+],
+'bsce-st-1-2': [
+  { code: 'ENM.102', name: 'Calculus 2: Integral Calculus', units: 3 },
+  { code: 'ENS.101', name: 'Physics 1: Physics for Engineers', units: 4 },
+  { code: 'CE.121', name: 'Engineering Drawing and Plans', units: 1 },
+  { code: 'CE.102', name: 'Computer Fundamentals and Programming', units: 2 },
+  { code: 'PHIHUM', name: 'Philosophy of the Human Person: Social & Political Dimensions', units: 3 },
+  { code: 'VOCMIS', name: 'Vocation & Mission in the Christian, Ignatian & Islamic Trad', units: 3 },
+  { code: 'PATHFIT2', name: 'Fitness Exercise', units: 2 },
+  { code: 'FFP 2', name: 'Freshmen Formation Program 2', units: 1.5, countForGPA: false },
+  { code: 'NSTP2', name: 'National Service Training Program 2', units: 3, countForGPA: false },
+],
+'bsce-st-1-3': [
+  { code: 'CE.103', name: 'Computer-Aided Design for CE', units: 1 },
+  { code: 'ENG.205', name: 'Engineering Economics', units: 3 },
+  { code: 'ENM.104', name: 'Engineering Data Analysis', units: 3 },
+],
+'bsce-st-2-1': [
+  { code: 'CE.104', name: 'Statics of Rigid Bodies', units: 3 },
+  { code: 'GE ELECT-LM', name: 'Literatures of Mindanao', units: 3 },
+  { code: 'ARTAPP', name: 'Art Appreciation', units: 3 },
+  { code: 'CE.105', name: 'Fundamentals of Surveying', units: 4 },
+  { code: 'ENM.103', name: 'Differential Equations', units: 3 },
+  { code: 'ETHICS', name: 'Ethics', units: 3 },
+  { code: 'CONWOR', name: 'Contemporary World', units: 3 },
+  { code: 'PATHFIT3', name: 'Dance/Sports/Rec & Games I', units: 2 },
+],
+'bsce-st-2-2': [
+  { code: 'CE.106', name: 'Dynamics of Rigid Bodies', units: 2 },
+  { code: 'CE.107', name: 'Geology for Civil Engineers', units: 2 },
+  { code: 'PHIHIS', name: 'Readings in Philippine History', units: 3 },
+  { code: 'CE.108', name: 'Mechanics of Deformable Bodies', units: 4 },
+  { code: 'GE-Elect DA', name: 'Data Analytics', units: 3 },
+  { code: 'CE.109', name: 'Construction Materials and Testing', units: 3 },
+  { code: 'SCIETECS', name: 'Science, Technology & Society', units: 3 },
+  { code: 'PURCOM', name: 'Purposive Communication', units: 3 },
+  { code: 'PATHFIT4', name: 'Dance/Sports/Rec & Games II', units: 2 },
+],
+'bsce-st-2-3': [
+  { code: 'CE.110', name: 'Engineering Management for CE', units: 2 },
+  { code: 'CE.111', name: 'Numerical Solutions to CE Problems', units: 3 },
+  { code: 'CE.112', name: 'Engineering Utilities 1', units: 3 },
+],
+'bsce-st-3-1': [
+  { code: 'CE.113', name: 'Structural Theory', units: 4 },
+  { code: 'CE.114', name: 'Highway and Railroad Engineering', units: 3 },
+  { code: 'CE.115', name: 'Hydrology', units: 2 },
+  { code: 'CE.116', name: 'Engineering Utilities 2', units: 3 },
+  { code: 'RIZAL', name: 'Life and Works of Rizal', units: 3 },
+  { code: 'ENG.201', name: 'Technopreneurship', units: 3 },
+  { code: 'CE.117', name: 'Principles of Transportation Engineering', units: 3 },
+],
+'bsce-st-3-2': [
+  { code: 'CE.118', name: 'Building System Design', units: 3 },
+  { code: 'CE.119', name: 'Principles of Steel Design', units: 3 },
+  { code: 'CE.120', name: 'Principles of Reinforced/Pre-Stressed Concrete', units: 4 },
+  { code: 'CE.121', name: 'Hydraulics', units: 5 },
+  { code: 'CE.122', name: 'CE Law, Contracts and Ethics', units: 2 },
+],
+'bsce-st-3-3': [
+  { code: 'CE.141S', name: 'Design of Steel Structures', units: 3 },
+  { code: 'CE.1425', name: 'Bridge Engineering', units: 3 },
+  { code: 'CE.123', name: 'Construction Methods and Project Management', units: 3 },
+],
+'bsce-st-4-1': [
+  { code: 'CE.131', name: 'CE Project 1', units: 2 },
+  { code: 'CE.124', name: 'Geotechnical Engineering (Soil Mechanics)', units: 4 },
+  { code: 'CE.1435', name: 'Pre-Stressed Concrete Design', units: 3 },
+  { code: 'CE.125', name: 'Quantity Surveying', units: 2 },
+  { code: 'CE.1445', name: 'Reinforced Concrete Design', units: 3 },
+  { code: 'CE.1455', name: 'Foundation and Retaining Wall Design', units: 3 },
+  { code: 'CE.133', name: 'CE Integration Course 1', units: 3 },
+],
+'bsce-st-4-2': [
+  { code: 'CE.132', name: 'CE Project 2', units: 2 },
+  { code: 'CE.126', name: 'CE on the Job Training (240 hrs. Minimum)', units: 3 },
+  { code: 'CE.134', name: 'CE Integration Course 2', units: 3 },
+],
+
+// ─── BS Civil Engineering (Geo-Technical) ─────────────────────────────────────
+'bsce-gt-1-1': [
+  { code: 'ENM.101', name: 'Calculus 1: Differential Calculus', units: 3 },
+  { code: 'ENS.103', name: 'Chemistry for Engineers', units: 4 },
+  { code: 'UNDSELF', name: 'Understanding the Self', units: 3 },
+  { code: 'MATMOD', name: 'Mathematics in the Modern World', units: 3 },
+  { code: 'SPIECO', name: 'Spirituality & Ecology in the Christian, Ignatian & Islamic Trad', units: 3 },
+  { code: 'CE.101', name: 'Civil Engineering Orientation', units: 2 },
+  { code: 'PATHFIT1', name: 'Movement Enhancement', units: 2 },
+  { code: 'FFP 1', name: 'Freshmen Formation Program 1', units: 1.5, countForGPA: false },
+  { code: 'NSTP1', name: 'National Service Training Program 1', units: 3, countForGPA: false },
+],
+'bsce-gt-1-2': [
+  { code: 'ENM.102', name: 'Calculus 2: Integral Calculus', units: 3 },
+  { code: 'ENS.101', name: 'Physics 1: Physics for Engineers', units: 4 },
+  { code: 'CE.121', name: 'Engineering Drawing and Plans', units: 1 },
+  { code: 'CE.102', name: 'Computer Fundamentals and Programming', units: 2 },
+  { code: 'PHIHUM', name: 'Philosophy of the Human Person: Social & Political Dimensions', units: 3 },
+  { code: 'VOCMIS', name: 'Vocation & Mission in the Christian, Ignatian & Islamic Trad', units: 3 },
+  { code: 'PATHFIT2', name: 'Fitness Exercise', units: 2 },
+  { code: 'FFP 2', name: 'Freshmen Formation Program 2', units: 1.5, countForGPA: false },
+  { code: 'NSTP2', name: 'National Service Training Program 2', units: 3, countForGPA: false },
+],
+'bsce-gt-1-3': [
+  { code: 'CE.103', name: 'Computer-Aided Design for CE', units: 1 },
+  { code: 'ENG.205', name: 'Engineering Economics', units: 3 },
+  { code: 'ENM.104', name: 'Engineering Data Analysis', units: 3 },
+],
+'bsce-gt-2-1': [
+  { code: 'CE.104', name: 'Statics of Rigid Bodies', units: 3 },
+  { code: 'LITMIN', name: 'Literatures of Mindanao', units: 3 },
+  { code: 'ARTAPP', name: 'Art Appreciation', units: 3 },
+  { code: 'CE.105', name: 'Fundamentals of Surveying', units: 4 },
+  { code: 'ENM.103', name: 'Differential Equations', units: 3 },
+  { code: 'ETHICS', name: 'Ethics', units: 3 },
+  { code: 'CONWOR', name: 'Contemporary World', units: 3 },
+  { code: 'PATHFIT3', name: 'Dance/Sports/Rec & Games I', units: 2 },
+],
+'bsce-gt-2-2': [
+  { code: 'CE.106', name: 'Dynamics of Rigid Bodies', units: 2 },
+  { code: 'CE.107', name: 'Geology for Civil Engineers', units: 2 },
+  { code: 'PHIHIS', name: 'Readings in Philippine History', units: 3 },
+  { code: 'CE.108', name: 'Mechanics of Deformable Bodies', units: 4 },
+  { code: 'GE-Elect DA', name: 'Data Analytics', units: 3 },
+  { code: 'CE.109', name: 'Construction Materials and Testing', units: 3 },
+  { code: 'SCIETECS', name: 'Science, Technology & Society', units: 3 },
+  { code: 'PURCOM', name: 'Purposive Communication', units: 3 },
+  { code: 'PATHFIT4', name: 'Dance/Sports/Rec & Games II', units: 2 },
+],
+'bsce-gt-2-3': [
+  { code: 'CE.110', name: 'Engineering Management for CE', units: 2 },
+  { code: 'CE.111', name: 'Numerical Solutions to CE Problems', units: 3 },
+  { code: 'CE.112', name: 'Engineering Utilities 1', units: 3 },
+],
+'bsce-gt-3-1': [
+  { code: 'CE.113', name: 'Structural Theory', units: 4 },
+  { code: 'CE.114', name: 'Highway and Railroad Engineering', units: 3 },
+  { code: 'CE.115', name: 'Hydrology', units: 2 },
+  { code: 'CE.116', name: 'Engineering Utilities 2', units: 3 },
+  { code: 'RIZAL', name: 'Life and Works of Rizal', units: 3 },
+  { code: 'ENG.201', name: 'Technopreneurship', units: 3 },
+  { code: 'CE.117', name: 'Principles of Transportation Engineering', units: 3 },
+],
+'bsce-gt-3-2': [
+  { code: 'CE.118', name: 'Building System Design', units: 3 },
+  { code: 'CE.119', name: 'Principles of Steel Design', units: 3 },
+  { code: 'CE.120', name: 'Principles of Reinforced/Pre-Stressed Concrete', units: 4 },
+  { code: 'CE.121', name: 'Hydraulics', units: 5 },
+  { code: 'CE.122', name: 'CE Law, Contracts and Ethics', units: 2 },
+],
+'bsce-gt-3-3': [
+  { code: 'CE.141G', name: 'Foundation Engineering', units: 3 },
+  { code: 'CE.142G', name: 'Geotechnical Earthquake Engineering', units: 3 },
+  { code: 'CE.123', name: 'Construction Methods and Project Management', units: 3 },
+],
+'bsce-gt-4-1': [
+  { code: 'CE.131', name: 'CE Project 1', units: 2 },
+  { code: 'CE.124', name: 'Geotechnical Engineering (Soil Mechanics)', units: 4 },
+  { code: 'CE.143G', name: 'Geotechnical Engineering (Rock Mechanics)', units: 3 },
+  { code: 'CE.125', name: 'Quantity Surveying', units: 2 },
+  { code: 'CE.144G', name: 'Deep Foundation Engineering', units: 3 },
+  { code: 'CE.145G', name: 'Ground Improvement', units: 3 },
+  { code: 'CE.133', name: 'CE Integration Course 1', units: 3 },
+],
+'bsce-gt-4-2': [
+  { code: 'CE.132', name: 'CE Project 2', units: 2 },
+  { code: 'CE.126', name: 'CE on the Job Training (240 hrs. Minimum)', units: 3 },
+  { code: 'CE.134', name: 'CE Integration Course 2', units: 3 },
+],
 
   // ─── BS Mathematics ───────────────────────────────────────────────────────
   'bsmath-1-1': [], // 1st Year, 1st Semester
@@ -3303,7 +3774,7 @@ export const SUBJECTS_BY_COURSE_YEAR_OLD = {
 export const HONORS_SYSTEMS = [
   {
     id: "new",
-    label: "New System (3.75 First Honors, 3.30 Second Honors)",
+    label: "New System (3.60 First Honors, 3.30 Second Honors)",
     curriculumId: "new",
   },
   {
