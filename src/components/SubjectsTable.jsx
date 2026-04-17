@@ -106,7 +106,24 @@ const SubjectsTable = ({
                 step="0.5"
                 placeholder="Grade"
                 value={subject.grade}
-                onChange={(e) => onGradeChange(subject.id, e.target.value)}
+                onChange={(e) => {
+                  const value = e.target.value;
+
+                  if (value === "") {
+                    onGradeChange(subject.id, value);
+                    return;
+                  }
+
+                  const numericValue = Number(value);
+
+                  if (Number.isNaN(numericValue)) {
+                    return;
+                  }
+
+                  const clampedValue = Math.min(4, Math.max(1, numericValue));
+
+                  onGradeChange(subject.id, String(clampedValue));
+                }}
                 onWheel={(e) => e.target.blur()}
                 className="font-body w-full sm:w-24 px-3 py-2 border border-zinc-300 text-zinc-900 disabled:bg-zinc-100 disabled:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
