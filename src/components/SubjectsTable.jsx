@@ -58,6 +58,12 @@ const SubjectsTable = ({
 }) => {
   const [selectedSubjectOption, setSelectedSubjectOption] = useState(null);
   const selectClassNames = getSelectClassNames(isDark);
+  const selectStyles = {
+    menuPortal: (base) => ({
+      ...base,
+      zIndex: 9999,
+    }),
+  };
   const addableSubjects = availableSubjects.filter(
     (availableSubject) =>
       !subjects.some(
@@ -175,6 +181,11 @@ const SubjectsTable = ({
               placeholder="Add Subject"
               unstyled
               classNames={selectClassNames}
+              styles={selectStyles}
+              menuPortalTarget={
+                typeof document !== "undefined" ? document.body : null
+              }
+              menuPosition="fixed"
               formatOptionLabel={(option, { context }) =>
                 context === "menu" ? (
                   <div>

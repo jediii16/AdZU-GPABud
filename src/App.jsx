@@ -9,6 +9,8 @@ import SubjectsTable from "./components/SubjectsTable";
 import GradingScale from "./components/GradingScale";
 import Footer from "./components/Footer";
 import DevFAQ from "./components/DevFAQ";
+import SplashScreen from "./components/SplashScreen";
+import PageTransition from "./components/PageTransition";
 import {
   getSubjectsForCourseYear,
   getAllSubjectsForCourse,
@@ -213,7 +215,7 @@ const Home = ({ isDark, onToggleTheme }) => {
   const navigate = useNavigate();
 
   return (
-    <>
+    <PageTransition isDark={isDark}>
       <Header isDark={isDark} onToggleTheme={onToggleTheme} />
 
       <div className="mt-6">
@@ -258,7 +260,7 @@ const Home = ({ isDark, onToggleTheme }) => {
 
         <Footer isDark={isDark} />
       </div>
-    </>
+    </PageTransition>
   );
 };
 
@@ -277,6 +279,14 @@ const App = () => {
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
+  // Show splash only on first load, not on hot reload in dev
+  const [showSplash, setShowSplash] = useState(() => {
+    if (typeof window === "undefined") return false;
+    // Use sessionStorage so it only shows once per browser session
+    const seen = window.sessionStorage.getItem("gpabud-splash-seen");
+    return !seen;
+  });
+
   useEffect(() => {
     if (typeof window === "undefined") {
       return;
@@ -285,6 +295,13 @@ const App = () => {
     window.localStorage.setItem("theme", isDark ? "dark" : "light");
     document.documentElement.style.colorScheme = isDark ? "dark" : "light";
   }, [isDark]);
+
+  const handleSplashFinish = () => {
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem("gpabud-splash-seen", "1");
+    }
+    setShowSplash(false);
+  };
 
   const toggleTheme = () => {
     if (typeof window === "undefined") {
@@ -328,6 +345,11 @@ const App = () => {
           : "bg-[#F5F5F5] text-zinc-900"
       }`}
     >
+      {/* Splash screen — shown once per session */}
+      {showSplash && (
+        <SplashScreen isDark={isDark} onFinish={handleSplashFinish} />
+      )}
+
       <Routes>
         <Route
           path="/"
@@ -341,10 +363,12 @@ const App = () => {
         <Route
           path="/devfaq"
           element={
-            <DevFAQ
-              isDark={isDark}
-              onToggleTheme={toggleTheme}
-            />
+            <PageTransition isDark={isDark}>
+              <DevFAQ
+                isDark={isDark}
+                onToggleTheme={toggleTheme}
+              />
+            </PageTransition>
           }
         />
       </Routes>
