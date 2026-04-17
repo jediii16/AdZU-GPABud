@@ -143,7 +143,7 @@ const GPAResult = ({
           <div>
             <div className="flex justify-between items-center mb-1">
               <span className={labelClass}>Second Honors</span>
-              <span className="text-lg sm:text-xl text-blue-600">
+              <span className="text-lg sm:text-xl text-blue-500">
                 {neededForSecondHonors}
               </span>
             </div>

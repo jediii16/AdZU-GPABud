@@ -27,7 +27,7 @@ const faqData = [
     id: 5,
     question: "Who built AdZU GPABud?",
     answer:
-      "AdZU GPABud is a student-developed project created by a Computer Science student, with assistance in data gathering and validation.",
+      "AdZU GPABud is a student-developed project created by a Computer Science student, with assistance in data gathering and validation from his girlfriend, who is also a Computer Science student.",
   },
   {
     id: 6,
