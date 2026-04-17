@@ -6,7 +6,7 @@ const DevFAQ = ({ isDark, onToggleTheme }) => {
     <div
       className={`min-h-screen transition-colors duration-500 ${
         isDark
-          ? "bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.16),_transparent_30%),linear-gradient(180deg,_#09090b_0%,_#111827_45%,_#020617_100%)]"
+          ? "bg-[radial-gradient(circle_at_80%_10%,rgba(13,148,136,0.10),transparent_40%),radial-gradient(circle_at_10%_90%,rgba(20,184,166,0.06),transparent_45%),linear-gradient(to_bottom_right,#060f0e,#0a1a18,#020807)]"
           : "bg-linear-to-br bg-[#f5f5f5]"
       }`}
     >

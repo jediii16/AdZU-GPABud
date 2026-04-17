@@ -5,7 +5,7 @@ const GradingScale = ({ isDark }) => {
     <div
       className={`mt-6 sm:mt-8 p-4 sm:p-6 rounded-xl border max-w-7xl mx-auto transition-colors duration-500 ${
         isDark
-          ? "bg-zinc-900 border-zinc-800 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+          ? "bg-[rgba(255,255,255,0.03)] border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl"
           : "bg-white border-zinc-100 shadow-sm"
       }`}
     >

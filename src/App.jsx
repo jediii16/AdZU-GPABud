@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { flushSync } from "react-dom";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -282,13 +283,48 @@ const App = () => {
     }
 
     window.localStorage.setItem("theme", isDark ? "dark" : "light");
+    document.documentElement.style.colorScheme = isDark ? "dark" : "light";
   }, [isDark]);
+
+  const toggleTheme = () => {
+    if (typeof window === "undefined") {
+      setIsDark((prev) => !prev);
+      return;
+    }
+
+    const root = document.documentElement;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    const finalizeTransition = () => {
+      window.setTimeout(() => {
+        root.classList.remove("theme-transitioning");
+      }, 650);
+    };
+
+    root.classList.add("theme-transitioning");
+
+    if (!document.startViewTransition || prefersReducedMotion) {
+      setIsDark((prev) => !prev);
+      finalizeTransition();
+      return;
+    }
+
+    document
+      .startViewTransition(() => {
+        flushSync(() => {
+          setIsDark((prev) => !prev);
+        });
+      })
+      .finished.finally(finalizeTransition);
+  };
 
   return (
     <div
       className={`min-h-screen px-3 py-4 sm:px-4 sm:py-5 md:px-6 md:py-6 transition-colors duration-500 ${
         isDark
-          ? "bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.2),transparent_30%),linear-gradient(180deg,#09090b_0%,#111827_45%,#020617_100%)] text-zinc-100"
+          ? "bg-[radial-gradient(circle_at_80%_10%,rgba(13,148,136,0.10),transparent_40%),radial-gradient(circle_at_10%_90%,rgba(20,184,166,0.06),transparent_45%),linear-gradient(to_bottom_right,#060f0e,#0a1a18,#020807)] text-zinc-100"
           : "bg-[#F5F5F5] text-zinc-900"
       }`}
     >
@@ -298,7 +334,7 @@ const App = () => {
           element={
             <Home
               isDark={isDark}
-              onToggleTheme={() => setIsDark((prev) => !prev)}
+              onToggleTheme={toggleTheme}
             />
           }
         />
@@ -307,7 +343,7 @@ const App = () => {
           element={
             <DevFAQ
               isDark={isDark}
-              onToggleTheme={() => setIsDark((prev) => !prev)}
+              onToggleTheme={toggleTheme}
             />
           }
         />

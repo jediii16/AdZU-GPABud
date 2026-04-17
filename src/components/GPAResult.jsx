@@ -19,7 +19,7 @@ const GPAResult = ({
   const isBelowPassing = hasGPA && currentStanding === "Below Passing";
 
   const cardClass = isDark
-    ? "bg-zinc-900 border-zinc-800 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+    ? "bg-[rgba(255,255,255,0.03)] border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl"
     : "bg-white border-zinc-100 shadow-sm";
   const labelClass = isDark ? "text-zinc-400" : "text-zinc-600";
   const valueClass = isDark ? "text-zinc-100" : "text-zinc-900";
