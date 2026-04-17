@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 import Header from "./components/Header";
@@ -13,7 +13,7 @@ import {
   getAllSubjectsForCourse,
 } from "./data/courses";
 
-const Home = () => {
+const Home = ({ isDark, onToggleTheme }) => {
   const [loadedSelection, setLoadedSelection] = useState(null);
   const subjectsSectionRef = useRef(null);
 
@@ -213,10 +213,10 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header isDark={isDark} onToggleTheme={onToggleTheme} />
 
       <div className="mt-6">
-        <SelectionForm onLoadSubjects={handleLoadSubjects} />
+        <SelectionForm onLoadSubjects={handleLoadSubjects} isDark={isDark} />
         {subjects.length > 0 && (
           <div ref={subjectsSectionRef}>
             <SubjectsTable
@@ -225,6 +225,7 @@ const Home = () => {
               onRemoveSubject={removeSubject}
               onAddSubject={addSubject}
               onGradeChange={handleGradeChange}
+              isDark={isDark}
             />
             <GPAResult
               totalUnits={totalUnits}
@@ -236,31 +237,80 @@ const Home = () => {
               neededForFirstHonors={neededForFirstHonors}
               neededForSecondHonors={neededForSecondHonors}
               neededForPassing={neededForPassing}
+              isDark={isDark}
             />
-            <GradingScale />
+            <GradingScale isDark={isDark} />
           </div>
         )}
         <div className="flex justify-center mt-6">
           <button
             onClick={() => navigate("/devfaq")}
-            className="px-4 py-1.5 text-base text-zinc-500 border border-zinc-300 rounded-md hover:border-zinc-400 hover:text-zinc-700 transition-colors duration-200 cursor-pointer font-body"
+            className={`px-4 py-1.5 text-base border rounded-md transition-colors duration-200 cursor-pointer font-body ${
+              isDark
+                ? "text-zinc-300 border-zinc-700 hover:border-zinc-500 hover:text-white bg-zinc-900/70"
+                : "text-zinc-500 border-zinc-300 hover:border-zinc-400 hover:text-zinc-700"
+            }`}
           >
             Developer FAQ
           </button>
         </div>
 
-        <Footer />
+        <Footer isDark={isDark} />
       </div>
     </>
   );
 };
 
 const App = () => {
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window === "undefined") {
+      return false;
+    }
+
+    const savedTheme = window.localStorage.getItem("theme");
+
+    if (savedTheme) {
+      return savedTheme === "dark";
+    }
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    window.localStorage.setItem("theme", isDark ? "dark" : "light");
+  }, [isDark]);
+
   return (
-    <div className="min-h-screen bg-[#F5F5F5] px-3 py-4 sm:px-4 sm:py-5 md:px-6 md:py-6">
+    <div
+      className={`min-h-screen px-3 py-4 sm:px-4 sm:py-5 md:px-6 md:py-6 transition-colors duration-500 ${
+        isDark
+          ? "bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.2),transparent_30%),linear-gradient(180deg,#09090b_0%,#111827_45%,#020617_100%)] text-zinc-100"
+          : "bg-[#F5F5F5] text-zinc-900"
+      }`}
+    >
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/devfaq" element={<DevFAQ />} />
+        <Route
+          path="/"
+          element={
+            <Home
+              isDark={isDark}
+              onToggleTheme={() => setIsDark((prev) => !prev)}
+            />
+          }
+        />
+        <Route
+          path="/devfaq"
+          element={
+            <DevFAQ
+              isDark={isDark}
+              onToggleTheme={() => setIsDark((prev) => !prev)}
+            />
+          }
+        />
       </Routes>
     </div>
   );

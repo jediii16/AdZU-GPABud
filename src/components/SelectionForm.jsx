@@ -31,51 +31,72 @@ const honorsOptions = HONORS_SYSTEMS.map((h) => ({
   label: h.label,
 }));
 
-const selectClassNames = {
+const getSelectClassNames = (isDark) => ({
   control: ({ isFocused }) =>
-    `min-h-[42px] w-full rounded-md border bg-white text-base cursor-pointer px-1
+    `min-h-[42px] w-full rounded-md border text-base cursor-pointer px-1 transition-colors duration-200
     ${
       isFocused
         ? "border-blue-500 ring-2 ring-blue-500/30"
-        : "border-zinc-300 hover:border-blue-400"
+        : isDark
+          ? "border-zinc-700 bg-zinc-900 text-zinc-100 hover:border-blue-400"
+          : "border-zinc-300 bg-white text-zinc-900 hover:border-blue-400"
     }`,
   menu: () =>
-    "mt-1 rounded-md border border-zinc-200 bg-white shadow-md text-base z-50 overflow-hidden",
+    `mt-1 rounded-md border text-base z-50 overflow-hidden shadow-md ${
+      isDark
+        ? "border-zinc-700 bg-zinc-900 text-zinc-100"
+        : "border-zinc-200 bg-white text-zinc-900"
+    }`,
   menuList: () => "py-1",
   groupHeading: () =>
-    "px-3 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wider text-zinc-400",
+    `px-3 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wider ${
+      isDark ? "text-zinc-500" : "text-zinc-400"
+    }`,
   option: ({ isSelected, isFocused }) =>
     `px-3 py-2 cursor-pointer
     ${
       isSelected
         ? "bg-blue-600 text-white"
         : isFocused
-          ? "bg-blue-50 text-zinc-900"
-          : "text-zinc-900"
+          ? isDark
+            ? "bg-blue-500/15 text-zinc-100"
+            : "bg-blue-50 text-zinc-900"
+          : isDark
+            ? "text-zinc-100"
+            : "text-zinc-900"
     }`,
-  singleValue: () => "text-zinc-900 whitespace-normal break-words",
+  singleValue: () =>
+    `${isDark ? "text-zinc-100" : "text-zinc-900"} whitespace-normal break-words`,
   valueContainer: () => "flex flex-wrap gap-1 py-1 px-1",
-  placeholder: () => "text-zinc-400",
+  placeholder: () => (isDark ? "text-zinc-500" : "text-zinc-400"),
   indicatorSeparator: () => "hidden",
-  dropdownIndicator: () => "text-zinc-400 hover:text-zinc-600 pr-2",
-  clearIndicator: () => "text-zinc-400 hover:text-zinc-600",
-  noOptionsMessage: () => "px-3 py-2 text-zinc-400 text-sm",
-};
+  dropdownIndicator: () =>
+    `${isDark ? "text-zinc-500 hover:text-zinc-300" : "text-zinc-400 hover:text-zinc-600"} pr-2`,
+  clearIndicator: () =>
+    isDark ? "text-zinc-500 hover:text-zinc-300" : "text-zinc-400 hover:text-zinc-600",
+  noOptionsMessage: () =>
+    `px-3 py-2 text-sm ${isDark ? "text-zinc-500" : "text-zinc-400"}`,
+});
 
-const SelectField = ({ label, children }) => (
+const SelectField = ({ label, children, isDark }) => (
   <div className="flex flex-col gap-1.5">
-    <label className="text-sm sm:text-base font-semibold uppercase tracking-wider text-zinc-500">
+    <label
+      className={`text-sm sm:text-base font-semibold uppercase tracking-wider ${
+        isDark ? "text-zinc-300" : "text-zinc-500"
+      }`}
+    >
       {label}
     </label>
     {children}
   </div>
 );
 
-const SelectionForm = ({ onLoadSubjects }) => {
+const SelectionForm = ({ onLoadSubjects, isDark }) => {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [year, setYear] = useState(null);
   const [semester, setSemester] = useState(null);
   const [honors, setHonors] = useState(null);
+  const selectClassNames = getSelectClassNames(isDark);
 
   const handleSubmit = () => {
     if (!selectedCourse || !year || !semester || !honors) {
@@ -91,10 +112,16 @@ const SelectionForm = ({ onLoadSubjects }) => {
   };
 
   return (
-    <div className="mt-6 sm:mt-8 p-4 sm:p-5 md:p-6 bg-white rounded-xl shadow-sm border border-zinc-100 max-w-7xl mx-auto">
+    <div
+      className={`mt-6 sm:mt-8 p-4 sm:p-5 md:p-6 rounded-xl border max-w-7xl mx-auto transition-colors duration-500 ${
+        isDark
+          ? "bg-zinc-900 border-zinc-800 shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+          : "bg-white border-zinc-100 shadow-sm"
+      }`}
+    >
       {/* Course */}
       <div className="mb-5">
-        <SelectField label="Course">
+        <SelectField label="Course" isDark={isDark}>
           <Select
             unstyled
             classNames={selectClassNames}
@@ -109,7 +136,7 @@ const SelectionForm = ({ onLoadSubjects }) => {
 
       {/* Year + Semester */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
-        <SelectField label="Year Level">
+        <SelectField label="Year Level" isDark={isDark}>
           <Select
             unstyled
             classNames={selectClassNames}
@@ -121,7 +148,7 @@ const SelectionForm = ({ onLoadSubjects }) => {
           />
         </SelectField>
 
-        <SelectField label="Semester">
+        <SelectField label="Semester" isDark={isDark}>
           <Select
             unstyled
             classNames={selectClassNames}
@@ -136,7 +163,7 @@ const SelectionForm = ({ onLoadSubjects }) => {
 
       {/* Honors System */}
       <div className="mb-6">
-        <SelectField label="Honors System">
+        <SelectField label="Honors System" isDark={isDark}>
           <Select
             unstyled
             classNames={selectClassNames}
