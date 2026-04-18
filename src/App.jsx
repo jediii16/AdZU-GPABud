@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 
 import Header from "./components/Header";
 import SelectionForm from "./components/SelectionForm";
@@ -372,6 +373,7 @@ const App = () => {
           }
         />
       </Routes>
+      <Analytics />
     </div>
   );
 };
